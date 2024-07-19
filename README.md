@@ -32,10 +32,11 @@ sentiment = GetSentiment(api_key, phrase = 'MOEX', from_date = '2024-07-17', to_
 3) Лемматизация (pymorphy2)
 4) Удаление стоп-слов (nltk)
 
-| Модель            | MAE           | $R^2$          |
-| -------------     | ------------- | -------------  | 
-| LSTM (Embedding)  | **0.33**      | **0.41**       | 
-| ML models (TF-IDF)| Уточняется    | Уточняется     | 
-| dostoevsky        | 0.79          | -2.15          | 
-| Hugging Face      | 0.69          | -1.59          | 
+| Модель             | MAE           | $R^2$          |
+| -------------      | ------------- | -------------  | 
+| LSTM (Embedding)   | **0.33**      | **0.41**       | 
+| ML models* (TF-IDF)| 0.37          | 0.26           |  
+| Hugging Face       | 0.69          | -1.59          | 
+| dostoevsky         | 0.79          | -2.15          |
 
+***XGBoost**, LR, Ridge, SVR, RF
