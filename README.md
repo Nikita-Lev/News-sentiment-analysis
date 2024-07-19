@@ -2,7 +2,7 @@
 Программа определяет тональность новостных заголовков, касающихся слова (словосочетания) phrase за период from_date – to_date:
 
 ```python
-from NewsSentiment import GetSentiment
+from News_Sentiment import GetSentiment
 
 sentiment = GetSentiment(api_key, phrase = 'MOEX', from_date = '2024-07-17', to_date = '2024-07-19')
 
