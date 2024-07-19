@@ -6,7 +6,7 @@ from NewsSentiment import GetSentiment
 
 sentiment = GetSentiment(api_key, phrase = 'MOEX', from_date = '2024-07-17', to_date = '2024-07-19')
 
-# sentiment:
+# sentiment
 # {'Date': ['2024-07-18', '2024-07-17', '2024-07-17', '2024-07-17'],
 #  'Time': ['07:41', '19:10', '15:00', '14:05'],
 #  'Title': ['Акции «Сургутнефтегаза» упали на 22%, проводится дискретный аукцион',
