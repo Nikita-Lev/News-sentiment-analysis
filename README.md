@@ -4,7 +4,16 @@
 ```python
 from NewsSentiment import GetSentiment
 
-sentiment = GetSentiment(api_key, phrase, from_date, to_date)
+sentiment = GetSentiment(api_key, phrase = 'MOEX', from_date = '2024-07-17', to_date = '2024-07-19')
+
+# sentiment:
+# {'Date': ['2024-07-18', '2024-07-17', '2024-07-17', '2024-07-17'],
+#  'Time': ['07:41', '19:10', '15:00', '14:05'],
+#  'Title': ['Акции «Сургутнефтегаза» упали на 22%, проводится дискретный аукцион',
+#            'Иран станет сильногазированным // «Газпром» может продать ему больше, чем Китаю',
+#            'Ozon пополняет кредитный портфель // Каковы перспективы банка маркетплейса в сегменте СМБ',
+#            'Meduza-Auswahl 11. – 17. Juli: Die vielen Toten von Burjatien'],
+#  'Sentiment': [-0.4098454 , -0.02652265,  0.06360333,  0.06825497] }
 ```
 Поиск новостей осуществляется при помощи newsapi. api_key можно получить на https://newsapi.org/
 
